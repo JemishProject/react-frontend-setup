@@ -1,10 +1,10 @@
 import React from "react";
 
-const Header = () => {
+const Header: React.FC = () => {
     return (
-        <header>
+        <div>
             Header
-        </header>
+        </div>
     )
 }
 

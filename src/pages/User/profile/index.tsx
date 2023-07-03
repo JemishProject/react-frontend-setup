@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
 
-const ProfileIndex = () => {
+const ProfileIndex: React.FC = () => {
     return (
     <div>
         <Helmet>

@@ -2,7 +2,11 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+interface Props {
+  children: any
+}
+
+const Layout: React.FC<Props> = ({ children }: Props) => {
   return (
     <div>
       <Header />
