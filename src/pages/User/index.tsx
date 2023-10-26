@@ -2,9 +2,11 @@ import React, { useCallback, useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 import { useDispatch } from "react-redux";
 import { getUsers } from "../../store/slices/UserSlices";
+import { useNavigate } from "react-router-dom";
 
 const Index: React.FC = () => {
     const dispatch: any = useDispatch();
+    const navigate: any = useNavigate()
 
     const [counter, setCounter] = useState(0);
 
@@ -17,9 +19,10 @@ const Index: React.FC = () => {
     }, [counter]);
 
     const handleClick = () => {
-        console.log("Hello World...!!");
-        handleIncrement();
-        console.log("counter", counter);
+        // console.log("Hello World...!!");
+        // handleIncrement();
+        // console.log("counter", counter);
+        // navigate("/login");
     }
 
     return (
